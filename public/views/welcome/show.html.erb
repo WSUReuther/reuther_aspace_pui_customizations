@@ -1,0 +1,64 @@
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <h2><%= t('brand.welcome_head') %></h2>
+  </div>
+</div>
+
+    <%= render partial: 'shared/search', locals: {
+      :search_url => "/search",
+      :title => t('archive._plural'),
+      :limit_options => [
+            ["#{t('actions.search')} #{t('search-limits.all')}",''],
+            [t('search-limit', :limit => t('search-limits.resources')),'resource'],
+            [t('search-limit', :limit => t('search-limits.digital')),'digital_object']
+          ],
+      :field_options => [
+            ["#{t('search_results.filter.fullrecord')}",''],
+            ["#{t('search_results.filter.title')}",'title'],
+            ["#{t('search_results.filter.creators')}",'creators_text'],
+            ["#{t('search_results.filter.subjects')}",'subjects_text'],
+            ["#{t('search_results.filter.notes')}", 'notes'],
+            ["#{t('search_results.filter.identifier')}", 'four_part_id']
+           ]
+    } %>
+
+    <div id="welcome_page" class="row">
+      <div class="col-md-4">
+        <h3><i class="fa fa-info-circle" aria-hidden:"true"></i> About ArchivesSpace</h3>
+        <p>Use ArchivesSpace to explore finding aids from two repositories:
+
+          <ul style="margin-left:-22px">
+            <li><a style="font-size:17px; font-weight:600" href="repositories/2">Walter P. Reuther Library, Archives of
+                Labor &amp; Urban Affairs</a></li>
+            <li><a style="font-size:17px; font-weight:600" href="repositories/3">Wayne State University Library System
+                Special Collections</a></li>
+          </ul>
+
+          <strong>
+            <p>Finding aids are descriptions of archival collections that help researchers identify materials relevant
+              to their topic.
+          </strong></p>
+
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-question-circle" aria-hidden:"true"></i> Get Help</h3>
+        <p><a href="help">Help with ArchivesSpace</a><br>
+          Browse our help page for information on searching, archival terminology, and more.</p>
+
+        <p><a href="http://reference.reuther.wayne.edu/form.php?queue_id=2964" target="_blank">Ask an Archivist</a><br>
+          Can't find what you're looking for? Submit a question for one-on-one assistance from an archivist.</p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-archive" aria-hidden:"true"></i> Requesting Materials</h3>
+
+        <p>To view materials from Reuther, please contact <a
+            href="mailto:reutherreference@wayne.edu">reutherreference@wayne.edu</a>.</p>
+
+        <p>To view materials from Special Collections, please contact <a
+            href="mailto:spec.collection@wayne.edu">spec.collection@wayne.edu</a>.</p>
+
+        <p><strong>Please note that viewing materials will require visiting the repository's reading room.</strong></p>
+      </div>
+    </div>

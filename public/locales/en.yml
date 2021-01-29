@@ -1,0 +1,15 @@
+en:
+  brand:
+    title: ArchivesSpace@Wayne
+    welcome_head: Welcome to ArchivesSpace@Wayne
+    welcome_message: 
+    welcome_page_title: ArchivesSpace@Wayne
+
+  actions:
+    search_header: Search our Finding Aids
+    hierarch: Finding Aid View
+    numeric: Box List
+
+  search_results:
+    more_facets: view more
+    fewer_facets: view less
