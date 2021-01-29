@@ -33,3 +33,11 @@ This plugin includes the following modifications to the ArchivesSpace PUI:
 ### Header and Footer
 
 `public/views/shared/_header.html.erb` overrides a default ArchivesSpace template to add a request for feedback alert to the header. `public/views/shared/_footer.html.erb` overrides a default ArchivesSpace template to remove the feedback link.
+
+### Analytics
+
+Add the following to `/path/to/archivesspace/config/config.rb` to enable the Google Analytics tracking snippet in `public/views/layout_head.html.erb`:
+
+```
+AppConfig[:google_analytics_key] = 'your_key_here'
+```
