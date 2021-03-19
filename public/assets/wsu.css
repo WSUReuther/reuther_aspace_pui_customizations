@@ -30,7 +30,7 @@ border-color:#222!important;
 
 /* Year filtering */
 
-.year_from {
+/* .year_from {
 display:none;
 }
 
@@ -52,7 +52,7 @@ display: none;
 
 span.plusminus > button.btn.btn-default {
 display: none;
-}
+} */
 
 /* Beta Alert */
 
@@ -129,9 +129,9 @@ color: #fff;
 display:none;
 }*/
 
-div#search_row_0 > .col-sm-3.form-group.form-inline.norepeat{
+/* div#search_row_0 > .col-sm-3.form-group.form-inline.norepeat{
 display:none;
-}
+} */
 
 /* Hamburger mobile menu*/
 
